@@ -1,0 +1,18 @@
+
+{
+    "_id": "customer1",
+    "firstName": "Jessica",
+    "lastName": "Adams",
+    "orders": [
+        {
+            "_id": "bg1",
+            "burgerName": "Bacon Burger",
+            "price": 10
+        },
+        {
+            "_id": "bg2",
+            "burgerName": "Spicy Veggie Burger",
+            "price": 8.5
+        }
+    ]
+}
