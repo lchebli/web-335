@@ -1,0 +1,18 @@
+{
+  "viewer": {
+    "_id": "jb75",
+    "firstName": "Alice",
+    "lastName": "Baxter"
+    },
+    "movie": {
+        "_id": "mv57",
+        "movieName": "Haunted Mansion",
+        "Genre": "Comedy"
+    },
+    "rating": {
+        "_id": "rt1",
+        "ratingScore": 8,
+        "viewerId": "jb75",
+        "movieId": "mv57"
+    }
+}
