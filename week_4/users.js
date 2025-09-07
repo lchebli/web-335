@@ -75,3 +75,14 @@ db.users.insertOne(mozart)
 db.users.insertOne(brahms)
 db.users.insertOne(wagner)
 db.users.insertOne(debussy)
+
+// Find all user documents.
+db.users.find();
+//Find a specific email
+db.users.findOne({email: "jbach@me.com"});
+//Find last name
+db.users.findOne({lastName: "Mozart"});
+//Finding Richard
+db.users.findOne({firstName: "Richard"});
+//Finding employeeId 1010
+db.users.findOne({employeeId: 1010});
