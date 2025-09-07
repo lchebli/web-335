@@ -1,0 +1,21 @@
+{
+    "user": {
+        "_id": "U1",
+        "firstName": "Wednesday",
+        "lastName": "Addams",
+        
+        "devices": [
+            {
+                "_id": "D1",
+                "deviceName": "testPhone",
+                "deviceType": "Smartphone",
+                "charger_id": "C1"
+            }
+        ]
+    },
+    "charger": {
+        "_id": "C1",
+        "chargerType": "USB-C",
+        "voltage": "18W"
+    }
+}
