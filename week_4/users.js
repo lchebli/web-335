@@ -38,7 +38,7 @@ mozart = {
 	"firstName": "Wolfgang",
 	"lastName": "Mozart",
 	"employeeId": "1009",
-	"email": "wmozart@me.com",
+	"email": "mozart@me.com",
 	"dateCreated": new Date()
 }
 
@@ -66,8 +66,16 @@ debussy = {
 	"dateCreated": new Date()
 }
 
+user = {
+  firstName: 'John',
+  lastName: 'Williams',
+  employeeId: '1013',
+  email: 'jwilliams@me.com',
+  dateCreated: new Date()
+};
+
 /**
- * Insert the newly created user documents.
+ * Put the newly created user documents.
  */
 db.users.insertOne(bach)
 db.users.insertOne(ludwig)
@@ -75,6 +83,7 @@ db.users.insertOne(mozart)
 db.users.insertOne(brahms)
 db.users.insertOne(wagner)
 db.users.insertOne(debussy)
+db.users.insertOne(user);
 
 // Queries
 db.users.find();
@@ -86,3 +95,4 @@ db.users.findOne({lastName: "Mozart"});
 db.users.findOne({firstName: "Richard"});
 //Finding employeeId 1010
 db.users.findOne({employeeId: 1010});
+
