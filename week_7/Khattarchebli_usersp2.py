@@ -1,7 +1,7 @@
 
 """
 Author: Leslie Khattarchebli
-Date: 06/11/2024
+Date: 09/24/2025
 Description: MongoDB Connection to web335DB
 """
 
@@ -29,7 +29,7 @@ print(f"User created with _id: {insert_result.inserted_id}")
 created_user = db.users.find_one({"employeeId": "2025"})
 print("Created User:", created_user)
 
-# Step 5: Update the email address of the document
+# Step 5: Update the email address
 db.users.update_one(
     {"employeeId": "2025"},
     {"$set": {"email": "ara.lovelace@bellevue.edu"}}
@@ -42,6 +42,6 @@ print("Updated User:", updated_user)
 # Step 7: Delete the document
 db.users.delete_one({"employeeId": "2025"})
 
-# Step 8: Prove the document was deleted
+# Step 8: Prove document deleted
 deleted_user = db.users.find_one({"employeeId": "2025"})
 print(" Deleted User (should be None):", deleted_user)
